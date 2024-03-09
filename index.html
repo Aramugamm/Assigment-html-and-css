@@ -4,82 +4,61 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
-  <title>Document</title>
+  <title>login</title>
 </head>
 <body>
-  <div class="container px-6 font-inter mx-auto">
-    <div class="w-full overflow-hidden max-w-[1728px] box-border bg-[#ffffff]">
-      <div class="gap-[32px] w-full flex p-[32px] relative max-w-[1728px] box-border items-center justify-center">
-        <div class="w-full flex relative max-w-[816px] box-border items-center justify-center">
-          <div class="gap-[48px] w-full flex relative max-w-[388px] box-border items-start flex-col justify-start">
-            <div class="gap-[28px] w-full flex relative max-w-[388px] box-border items-start flex-col justify-start">
-              <div class="w-full max-w-[auto] mt-0 min-h-[auto] text-center mb-0">
-                <p class="mt-0 text-center mb-0">
-                  <span class="text-[#0c1421] text-[36px] not-italic font-['SF_Pro_Rounded',_sans-serif] font-bold leading-[36px] tracking-[0px] normal-case">Welcome Back</span>
-                  <span class="text-[#0c1421] text-[36px] not-italic font-['SF_Pro_Rounded',_sans-serif] font-normal leading-[36px] tracking-[0px] normal-case">👋</span>
-                </p>
-              </div>
-              <div class="w-full max-w-[auto] mt-0 min-h-[auto] text-left mb-0">
-                <p class="text-[#313957] text-[18px] not-italic mt-0 text-left font-['SF_Pro_Display',_sans-serif] font-normal leading-[32px] mb-0 tracking-[0px] normal-case">
-                  Today is a new day. It's your day. You shape it.
-                </p>
-                <p class="text-[#313957] text-[18px] not-italic mt-0 text-left font-['SF_Pro_Display',_sans-serif] font-normal leading-[32px] mb-0 tracking-[0px] normal-case">
-                  Sign in to start managing your projects.
-                </p>
-              </div>
-            </div>
-            <div class="gap-[24px] w-full flex relative max-w-[388px] box-border items-end flex-col justify-center">
-              <div class="gap-[8px] w-full flex relative max-w-[388px] box-border items-start flex-col justify-start">
-                <div class="w-full max-w-[auto] mt-0 min-h-[auto] text-left mb-0">
-                  <p class="text-[#0c1421] text-[16px] not-italic mt-0 text-left font-['Roboto',_sans-serif] font-normal leading-[16px] mb-0 tracking-[0px] normal-case">Email</p>
-                  <input
-                  type="text"
-                  class="w-full p-2 border border-gray-300 rounded-md placeholder:font-light placeholder:text-gray-500 bg-gray-100"
-                  name="email"
-                  id="email"
-                />
+  <div class="container px-6  w-full h-screen flex item-start">
+    <div class="w-full h-full flex item-start max-sm:flex-col-reverse py-6">
+        <div class="w-1/2 h-full flex flex-col p-20 justify-between max-sm:w-screen">
+            
+            <div class="w-full flex flex-col max-w-[690px]">
+                
+                <div class="w-full flex flex-col mb-6">
+                    <h3 class="text-3xl font-semibold mb-4">Welcome back 👋</h3>
+                    
+                    <p class="text-md mb-4">Today is a new day. It's your day. You Shape it. <br>Sign in to start managing your project.</p>
                 </div>
-              </div>
-              <div class="gap-[8px] w-full flex relative max-w-[388px] box-border items-start flex-col justify-start">
-                <div class="w-full max-w-[auto] mt-0 min-h-[auto] text-left mb-0">
-                  <p class="text-[#0c1421] text-[16px] not-italic mt-0 text-left font-['Roboto',_sans-serif] font-normal leading-[16px] mb-0 tracking-[0px] normal-case">Password</p>
-                  <input
-                  type="password"
-                  name="pass"
-                  id="pass"
-                  class="w-full p-2 border border-gray-300 rounded-md placeholder:font-light placeholder:text-gray-500 bg-gray-100" 
-                /> 
-                </div>
-              </div>
-              <div class="w-full max-w-[auto] mt-0 min-h-[auto] text-center mb-0">
-                <a class="text-[#1e4ae9] text-[16px] not-italic mt-0 text-center font-['Roboto',_sans-serif] font-normal leading-[16px] mb-0 tracking-[0px] normal-case" href="#">Forgot Password?</a>
-              </div>
-              <div class="gap-[10px] w-full flex px-0 py-[16px] relative max-w-[388px] box-border items-center rounded-tl-[12px] rounded-br-[12px] rounded-tr-[12px] rounded-bl-[12px] justify-between bg-[#162d3a]">
-                <div class="w-full max-w-[auto] mt-0 min-h-[auto] text-center mb-0">
-                  <a class="text-[#ffffff] text-[20px] not-italic mt-0 text-center font-['Roboto',_sans-serif] font-normal leading-[20px] mb-0 tracking-[0px] normal-case" href="#">Sign in</a>
-                </div>
-              </div>
+                <form class="flex flex-col justify-center mb-4">
+                    <div class="mb-2">
+                        <table for="email">Email</table>
+                        <input 
+                        type="text"
+                        placeholder="  example@email.com"
+                        class="w-full py-3 my-4 border bg-slate-100 rounded-xl"
+                        >
+                    </div>
+                    <div class="mb-2">
+                        <table for="password">Password</table>
+                        <input 
+                        type="password"
+                        placeholder="  At least 8 characters"
+                        class="w-full py-3 my-4 border bg-slate-100 rounded-xl"
+                        >
+                    </div>
+                    <div class="w-full items-center flex justify-between">
+
+                        <a href="#" class="text-sm text-blue-700 mb-6">Forgot Password</a>
+                    </div>
+
+                    <div class="w-full flex flex-col my-6">
+                        <button class="w-full bg-slate-700 p-3 rounded-xl text-white">Sign in</button>
+                    </div>
+                </form>
+
+                <p class="text-md mt-4 text-center">Don't you have an account?
+                <a class="text-blue-700" href="#">signup</a>
+                </p>
             </div>
-            <div class="w-full max-w-[382px] mt-0 min-h-[auto] text-center mb-0">
-              <p class="mt-0 text-center mb-0">
-                <span class="text-[#313957] text-[18px] not-italic font-['Roboto',_sans-serif] font-normal leading-[29px] tracking-[0px] normal-case">
-                  Don't you have an account?
-                </span>
-                <a class="text-[#1e4ae9] text-[18px] not-italic font-['Roboto',_sans-serif] font-normal leading-[29px] tracking-[0px] normal-case" href="#">Sign up</a>
-              </p>
+            
+            <div class="w-full items-center flex flex-col">
+                <p class="text-sm text-slate-400">&copy 2024 ALL RIGHT RESERVED</p> 
             </div>
-            <div class="w-full max-w-[382px] mt-0 min-h-[auto] text-center mb-0">
-              <p class="text-[#959cb6] text-[16px] not-italic mt-0 text-center font-['Roboto',_sans-serif] font-normal leading-[16px] mb-0 tracking-[0px] normal-case">© 2023 ALL RIGHTS RESERVED</p>
-            </div>
-          </div>
         </div>
-        <div class="w-full max-w-[816px] box-border">
+        <div class="relative w-1/2 h-full flex-col  max-sm:w-screen">
           <img
             src="./assets/bce3759a951b5bb2ccf7636b620fed64.png"
             alt="rectangle"
-            width="816"
-            height="1076"
-            class="w-full h-auto m-0 block max-w-[816px] rounded-tl-[24px] rounded-br-[24px] rounded-tr-[24px] rounded-bl-[24px]"
+            class="w-auto h-auto object-cover rounded-2xl sm:pb-6 pr-6"
             />
         </div>
       </div>
